@@ -27,6 +27,35 @@ Modules:
 - input_control
 - game_tick
 
+                   +----------------+
+                 |   VGA Monitor  |
+                 +-------▲--------+
+                         |
+                   VGA Signals
+                         |
++---------+       +-------------+
+| Buttons |-----> | Input Logic |
++---------+       +-------------+
+
+                         |
+                         v
+
+                 +-------------+
+                 | Snake Logic |
+                 +-------------+
+
+                         |
+                         v
+
+                 +-------------+
+                 |  Renderer   |
+                 +-------------+
+
+                         |
+                         v
+
+                  Pixel Output
+
 ## Future Improvements
 - Random food generation
 - Collision detection
